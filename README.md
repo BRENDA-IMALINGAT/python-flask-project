@@ -19,7 +19,6 @@ This is a simple web application built using Flask and Docker. The app is contai
 1. Create a Github account and repository for the flask app:
     ```
     https://github.com/BRENDA-IMALINGAT/python-flask-project.git
-    cd your-repository-name
     ```
 
 2. install python flask:
