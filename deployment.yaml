@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-app
+spec:
+  replicas: 2  # Run 2 instances
+  selector:
+    matchLabels:
+      app: flask
+  template:
+    metadata:
+      labels:
+        app: flask
+    spec:
+      containers:
+      - name: flask-container
+        image: mydockerhubusername/my-flask-app:latest  # Use the pushed Docker image
+        ports:
+        - containerPort: 5000
+        resources:
+          requests:  # Minimum resources the container will always get
+            memory: "128Mi"
+            cpu: "250m"
+          limits:  # Maximum resources the container can use
+            memory: "512Mi"
+            cpu: "500m"
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>Divine Code Software | Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Divine</span> Code Software</h1>
+        </div>
+        <nav>
+          <ul>
+            <a href="{{ url_for('home') }}"> Home </a>
+            <a href="{{ url_for('about') }}">                        About </a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+      <div class="container">
+        <h1>Affordable Professional Web Design</h1>
+        <p>"Stunning, mobile-friendly websites at unbeatable prices – Get online fast without breaking the bank!"</p>
+      </div>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter Email..." required>
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <img src="{{ url_for('static', filename='images/logo_html.png') }}">
+          <h3>HTML5 Markup</h3>
+          <p>
+            Divine Code Software uses HTML5 as their primary markup language for building robust, responsive, and accessible web applications. This choice is based on future-proofing, improved user experience, accessibility, simplified development, and enhanced SEO. HTML5 ensures compatibility with evolving browser technologies and devices, allowing for engaging, interactive, and responsive interfaces that adapt to various screen sizes and devices. Its semantic structure and ARIA attributes enable inclusive web applications catering to diverse user needs. The intuitive syntax of HTML5 reduces development time and effort, while its semantic markup and microdata support enhance web applications' visibility and ranking in search engine results.
+            </p>
+        </div>
+        <div class="box">
+          <img src="{{ url_for('static', filename='images/logo_css.png') }}">
+          <h3>CSS3 Styling</h3>
+          <p>Divine Code Software uses CSS3 as their primary styling language for creating visually stunning, responsive, and maintainable web applications. CSS3 enhances visual effects through features like gradients, shadows, and animations, while its media queries and flexible box layouts enable responsive, mobile-friendly interfaces. It also improves performance with optimized syntax and hardware acceleration, reducing page load times. CSS3's modular structure and simplified syntax make it easier for developers to maintain, update, and scale stylesheets. Additionally, CSS3's widespread adoption and standardized syntax ensure consistent designs across modern browsers and devices.</p>
+        </div>
+        <div class="box">
+          <img src="{{ url_for('static', filename='images/logo_brush.png') }}">
+          <h3>Graphic Design</h3>
+          <p>At Divine Code Software, we understand that a strong online presence goes beyond just a functional website. That's why we offer comprehensive graphic design services to ensure your brand's visual identity is consistent across all platforms. We create cohesive designs that seamlessly integrate with your website, reinforcing your brand message."
+            "Think of it as a complete visual package. Your website is the core, and our graphic design services provide the supporting elements that make your brand truly shine.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Divine Code Software, Copyright & copy; 2025</p>
+    </footer>
+  </body>
+</html>

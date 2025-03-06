@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Affordable and professional web design">
+	  <meta name="keywords" content="web design, affordable web design, professional web design">
+  	<meta name="author" content="Brad Traversy">
+    <title>Dvine Code Software | About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">Divine</span> Code Software</h1>
+        </div>
+        <nav>
+          <ul>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="newsletter">
+      <div class="container">
+        <h1>Subscribe To Our Newsletter</h1>
+        <form>
+          <input type="email" placeholder="Enter Email..." required>
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="container">
+        <article id="main-col">
+          <h1 class="page-title">About Us</h1>
+          <p>
+            At Divine Code Software, we believe in the transformative power of well-crafted digital experiences. We're not just a website design company; we're a team of passionate creators driven by the desire to help businesses thrive in the online world. Our journey began with a simple vision: to bridge the gap between innovative design and functional technology. We saw that many businesses struggled to create an online presence that truly reflected their brand and achieved their goals. That's why we founded Divine Code Software, to provide tailored web solutions that empower our clients to succeed. Our mission is to deliver exceptional web design and development services, built on a foundation of creativity, integrity, and a relentless commitment to client satisfaction.
+          </p>
+          <p class="dark">
+            Our process is collaborative and transparent. We begin with a deep dive into your business goals, followed by meticulous design, development, and testing. We believe in open communication every step of the way. Meet our team of skilled designers and developers, each bringing a wealth of experience and a passion for innovation.
+          </p>
+        </article>
+
+        <aside id="sidebar">
+          <div class="dark">
+            <h3>What We Do</h3>
+            <ol>
+              <li>Custom Web Design: We craft unique, visually engaging websites that capture your brand's essence.</li>
+              <li>E-commerce Development: We build robust online stores that drive sales and enhance the customer experience.</li>
+              <li>UX/UI Design: We prioritize user experience, ensuring your website is intuitive and easy to navigate.</li>
+              <li>Website Optimization: We optimize websites for speed, performance, and search engine visibility.</li>
+              <li>WordPress and Custom Development: our team is proficient in multiple platforms, allowing us to utilize the best tools for each project</li>
+              </ol>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <p>Divine Code Software, Copyright & copy; 2025</p>
+    </footer>
+  </body>
+</html>
